@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- neccessary dependency for Datepicker by jQuery-UI -->
+    <link rel="stylesheet" href="node_modules/jquery-ui-dist/jquery-ui.min.css">
+    <script src="node_modules/jquery-ui-dist/external/jquery/jquery.js"></script>
+    <script src="node_modules/jquery-ui-dist/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <title>Datepicker-Test</title>
+</head>
+
+<body>
+    <h1>Hello Datepicker</h1>
+
+    <div>
+        <input type="text" class="date" placeholder=" &#xf073;">
+        <input type="text" class="date" placeholder=" &#xf073;">
+    </div>
+
+    <!-- Datepicker implement -->
+    <script>
+        $(document).ready(function () {
+            $(".date").datepicker({dateFormat:"yy-mm-dd"}).val();
+        });
+    </script>
+</body>
+
+</html>
